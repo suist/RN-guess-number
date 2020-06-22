@@ -1,13 +1,18 @@
 import React from "react";
 import { View, Text, StyleSheet, Button, Image } from "react-native";
+import TitleText from "../components/TitleText";
 
 const GameOverScreen = (props) => {
   return (
     <View style={styles.screen}>
-      <Text>This Game is Over</Text>
+      <TitleText>This Game is Over</TitleText>
       <View style={styles.imageContainer}>
         <Image
-          source={require("../assets/original.png")}
+          //   source={require("../assets/original.png")}
+          source={{
+            uri:
+              "https://image.freepik.com/free-vector/international-day-yoga-illustration-paper-style_23-2148560838.jpg",
+          }}
           style={styles.image}
         />
       </View>
