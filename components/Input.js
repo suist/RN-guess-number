@@ -2,12 +2,12 @@ import React from "react";
 import { TextInput, StyleSheet } from "react-native";
 
 const Input = (props) => {
-  return <TextInput {...prop} style={{ ...styles.input, ...props.style }} />;
+  return <TextInput {...props} style={{ ...styles.input, ...props.style }} />;
 };
 
 const styles = StyleSheet.create({
   input: {
-    textAlign: "center",
+    height: 30,
     borderBottomColor: "#a1a39b",
     borderBottomWidth: 1,
     marginVertical: 10,
