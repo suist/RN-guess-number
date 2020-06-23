@@ -5,7 +5,11 @@ import TitleText from "../components/TitleText";
 const GameOverScreen = (props) => {
   return (
     <View style={styles.screen}>
-      <TitleText>This Game is Over</TitleText>
+      <TitleText>
+        This Game is Over{""}
+        <Text style={styles.resultText}>hi</Text>
+        is this same?{""}
+      </TitleText>
       <View style={styles.imageContainer}>
         <Image
           //   source={require("../assets/original.png")}
@@ -30,6 +34,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+  },
+  resultText: {
+    textAlign: "center",
+    fontSize: 20,
   },
   imageContainer: {
     width: 300,
