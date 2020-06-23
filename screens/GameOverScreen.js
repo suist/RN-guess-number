@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Button, Image } from "react-native";
 import TitleText from "../components/TitleText";
+import MainButton from "../components/MainButton";
 
 const GameOverScreen = (props) => {
   return (
@@ -23,7 +24,8 @@ const GameOverScreen = (props) => {
 
       <Text>Number of rounds : {props.roundsNumber}</Text>
       <Text>Number was :{props.userNumber}</Text>
-      <Button title="NEW Game" onPress={props.onRestart} />
+      <MainButton onPress={props.onRestart}>NEW GAME</MainButton>
+
       {/* it just pointer! not excute immediately! so dont use onRestart() */}
     </View>
   );
